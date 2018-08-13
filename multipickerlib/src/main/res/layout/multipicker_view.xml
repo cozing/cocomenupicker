@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/pickerview_bg_topbar">
+
+        <TextView
+            android:id="@+id/multi_picker_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingStart="@dimen/pickerview_topbar_padding"
+            android:paddingEnd="@dimen/pickerview_topbar_padding"
+            android:text="@string/multipicker_cancel"
+            android:textColor="@drawable/selector_pickerview_btn"
+            android:textSize="@dimen/pickerview_topbar_btn_textsize"/>
+
+        <TextView
+            android:id="@+id/multi_picker_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/pickerview_topbar_title"
+            android:textSize="@dimen/pickerview_topbar_title_textsize"/>
+
+        <TextView
+            android:id="@+id/multi_picker_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingStart="@dimen/pickerview_topbar_padding"
+            android:paddingEnd="@dimen/pickerview_topbar_padding"
+            android:text="@string/multipicker_confirm"
+            android:textColor="@drawable/selector_pickerview_btn"
+            android:textSize="@dimen/pickerview_topbar_btn_textsize"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pickerview_padding"
+        android:paddingRight="@dimen/pickerview_padding"
+        android:paddingBottom="@dimen/pickerview_padding_bottom"
+        android:paddingTop="@dimen/pickerview_padding_top"
+        android:background="@color/multi_picker_view_white">
+
+        <com.cozing.multipickerview.view.WheelView
+            android:id="@+id/multi_picker_wheelview1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+        <com.cozing.multipickerview.view.WheelView
+            android:id="@+id/multi_picker_wheelview2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

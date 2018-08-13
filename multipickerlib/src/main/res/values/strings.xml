@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">multipickerview</string>
+    <string name="multipicker_cancel">取消</string>
+    <string name="multipicker_confirm">确定</string>
+</resources>
